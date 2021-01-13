@@ -22,8 +22,11 @@ class _no10State extends State<no10>{
               child: Column(
                 children: [
                   RaisedButton(
-                      child: Text("RaisedButton"),
-                      onPressed: (){}
+                      child: Text("뒤로이동"),
+                      onPressed: (){
+                        // 2021.01.13 (11) Flutter tutorial navigator : 페이지 이동 및 뒤로 가기
+                        Navigator.of(context).pop();
+                      }
                   ),
                   BackButton(),
                   CloseButton(),

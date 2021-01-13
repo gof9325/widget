@@ -2,13 +2,17 @@ import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:widget/no1234567.dart';
 import 'package:widget/docs/no10.dart';
+import 'package:widget/docs/no11.dart';
+import 'package:widget/docs/no12_0.dart';
+import 'package:widget/docs/no12_1.dart';
+import 'package:widget/docs/no13.dart';
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
   GestureBinding.instance.resamplingEnabled = true;
   return runApp(
     new MaterialApp(
-      home: no10(),
+      home: no13(),
       // home: MyMain(),
     )
   );
@@ -37,15 +41,7 @@ class _MyMainState extends State<MyMain>{
               child: Text("ListView${(index+1).toString()}"),
             );
           }
-              //(context, int index) => GestureDetector(
-            // onTap: (){
-            //     Navigator.of(context).push(
-            //       MaterialPageRoute(
-            //           builder: (BuildContext context) => new MyApp(index),
-            //       )
-            //     );
-            //   },
-            // )
+
         ),
       ),
     );
